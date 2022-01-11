@@ -11,11 +11,8 @@ export default function CalltoAction(props) {
         <img className="logo" src="forage.svg" />
         <div className="h-fit flex justify-center">
           <div className="social-button">
-            <FontAwesomeIcon
-              className
-              icon={faFacebookSquare}
-            ></FontAwesomeIcon>
-            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faFacebookSquare} />
+            <FontAwesomeIcon icon={faInstagram} />
           </div>
         </div>{" "}
         <div className="flex justify-center">

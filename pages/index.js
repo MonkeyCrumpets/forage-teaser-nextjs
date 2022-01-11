@@ -1,14 +1,13 @@
 import HeroBox from "../components/hero";
-import Head from "next/head";
+import Header from "../components/header";
+import CalltoAction from "../components/cta";
 
 export default function Lander(props) {
   return (
     <>
-      <Head>
-        <title>Forage Gourmet Platter Co</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <HeroBox />
+      <Header />
+      {/* <HeroBox /> */}
+      <CalltoAction />
     </>
   );
 }
