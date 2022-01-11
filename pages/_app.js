@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import "@fontsource/montserrat/200.css";
+import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/800.css";
 import "@fontsource/josefin-sans";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS

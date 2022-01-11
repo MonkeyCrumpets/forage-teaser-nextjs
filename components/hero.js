@@ -1,22 +1,32 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import herobg from "../public/hero.jpg";
+import Image from "next/image";
+
+const Background = () => (
+  <div>
+    <div className='-z-10 w-full h-full overflow-hidden'>
+      <Image
+        alt='A table filled with food'
+        src={herobg}
+        layout='fill'
+        objectFit='cover'
+        quality={75}
+      />
+    </div>
+  </div>
+);
 
 export default function HeroBox() {
   return (
     <>
-      <div className="m-0 grid justify-center h-[80vh] w-full bg-neutral-800 bg-[url('/hero.jpg')] bg-no-repeat bg-cover">
-        <div className="grid items-center row-span-6">
-          <img
-            className="max-w-[90vw] h-[50vh]"
-            src="herotext.svg"
-            alt="something really good is coming soon"
-          />
+      <div className='h-[90vh] w-full p-5' bg-cream>
+        <Background />
+        <div className='flex justify-center'>
+          <img className='flex w-[400px] z-10' src='herotext.svg' />
         </div>
-        <div
-          className="grid justify-center items-end text-6xl text-[#fffdf9]"
-          alt="scroll down"
-        >
-          <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+        <div className='flex justify-center z-10 text-6xl text-[#fbf7f0]' alt='scroll down'>
+          <FontAwesomeIcon icon={faChevronDown} />
         </div>
       </div>
     </>

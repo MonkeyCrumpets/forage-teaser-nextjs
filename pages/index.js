@@ -6,7 +6,7 @@ export default function Lander(props) {
   return (
     <>
       <Header />
-      {/* <HeroBox /> */}
+      <HeroBox />
       <CalltoAction />
     </>
   );
