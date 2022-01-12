@@ -14,7 +14,6 @@ const Background = () => (
         quality={50}
         priority='true'
       /> */}
-      <img src='hero.webp' />
     </div>
   </div>
 );
@@ -22,7 +21,7 @@ const Background = () => (
 export default function HeroBox() {
   return (
     <>
-      <div className='grid h-[90vh] w-full bg-cream'>
+      <div className="grid h-[90vh] w-full bg-cream bg-cover bg-[url('../public/hero.webp')]">
         <Background />
         <div className='grid justify-center'>
           <img
