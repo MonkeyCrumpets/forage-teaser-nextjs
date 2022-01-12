@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const Background = () => (
   <div>
-    <div className='overflow-hidden w-full h-full -z-10'>
+    <div className='bg-cream overflow-hidden w-full h-full -z-10'>
       <Image
         alt='A table filled with food'
         src={herobg}
         layout='fill'
         objectFit='cover'
-        quality={75}
+        quality={50}
       />
     </div>
   </div>
