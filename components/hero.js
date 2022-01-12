@@ -20,10 +20,10 @@ const Background = () => (
 export default function HeroBox() {
   return (
     <>
-      <div className='grid h-[90vh] w-full p-5' bg-cream>
+      <div className='grid h-[90vh] w-full bg-cream'>
         <Background />
         <div className='grid justify-center'>
-          <img className='grid self-center w-[550px] z-10' src='herotext.svg' />
+          <img className='grid self-center w-[550px] p-10 z-10' src='herotext.svg' />
         </div>
         <div className='grid self-end justify-center z-10 text-6xl text-[#fbf7f0]' alt='scroll down'>
           <FontAwesomeIcon icon={faChevronDown} />
