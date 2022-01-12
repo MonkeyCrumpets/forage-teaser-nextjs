@@ -12,6 +12,7 @@ const Background = () => (
         layout='fill'
         objectFit='cover'
         quality={50}
+        priority='true'
       />
     </div>
   </div>
@@ -23,7 +24,7 @@ export default function HeroBox() {
       <div className='grid h-[90vh] w-full bg-cream'>
         <Background />
         <div className='grid justify-center'>
-          <img className='grid self-center w-[550px] p-10 z-10' src='herotext.svg' />
+          <img className='grid self-center w-[600px] p-10 z-10' src='herotext.svg' alt="Something really good is happening soon" />
         </div>
         <div className='grid self-end justify-center z-10 text-6xl text-[#fbf7f0]' alt='scroll down'>
           <FontAwesomeIcon icon={faChevronDown} />
